@@ -1,0 +1,74 @@
+// Debuggen // Einrichtung durch Cheu // 2022
+
+Hinweis vor dem Start dieses Prozesses:
+- Dieser Prozess ist auf keinen Fall für Software wie Defender Control gedacht; bitte versuchen Sie, den Windows Defender wieder zu aktivieren, wenn Sie ihn durch eine Drittsoftware deaktiviert haben.
+durch eine Software eines Drittanbieters deaktiviert haben. Wenn Sie noch keine Software eines Drittanbieters zum Deaktivieren des Windows Defenders verwendet haben, sollten Sie dies auch nicht tun.
+
+---------------------------------------------
+Normale Computerkonfiguration
+
+Window's Defender
+1. Deaktivieren Sie alle Einstellungen im Viren- und Bedrohungsschutz
+2. Deaktivieren Sie alle Einstellungen für den Exploit-Schutz
+3. Deaktivieren Sie alle Einstellungen für die Kernisolierung
+
+Überlagerungen
+1. Discord-Overlay deaktivieren
+2. GeForce Expierence-Overlay deaktivieren
+3. Overwolf-Overlay deaktivieren - [Bekannt dafür, Abstürze zu verursachen]
+
+Anti-Cheat & Anti-Virus von Drittanbietern
+1. Deaktivieren // Deinstallieren von Vanguard
+2. Anti-Virus von Drittanbietern deaktivieren oder einen Ausschluss für Maple.Software (Loader) hinzufügen
+(Anti-Viren wie Kaspersky müssen unbedingt deaktiviert werden, da Ausschlüsse nicht funktionieren)
+
+---------------------------------------------
+Modifiziertes Computer-Setup (Overlays & Anti-Cheat // Third-Party AV aus dem normalen Computer-Setup folgen)
+
+Wenn Window's Defender & Exploit Protection standardmäßig von Ihrem System entfernt wurden, befolgen Sie bitte die folgenden Schritte genau wie sie aufgeführt sind
+
+Exploit-Schutz
+1. Öffnen Sie CMD mit Administratorrechten
+2. Einfügen und ausführen - bcdedit.exe /set {current} nx AlwaysOff
+3. Öffnen Sie den Richtlinien-Editor
+4. Gehen Sie zu Lokale Computerrichtlinie\Computerkonfiguration\Verwaltungsvorlagen\System\Gerätewächter
+5. Deaktivieren Sie alle Einstellungen in der Liste
+6. Starten Sie den Computer neu
+
+Schlüssel-Registerkarte
+1. Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios
+2. DWORD-Schlüssel als HypervisorEnforcedCodeIntegrity erstellen und Wert auf 0 setzen
+3. neu starten.
+
+---------------------------------------------
+Fehlersuche bei Maple (Abstürze)
+Erste Überprüfung: https://maple.software/help/software-issues für eine Lösung für Ihr Problem, wenn keine gefunden wird, folgen Sie den folgenden Schritten...
+Zweitens: Wenn es "Infinite loading" oder "Doesn't inject" oder "Crashes on inject" heißt, dann haben Sie die obigen Schritte nicht korrekt ausgeführt!
+
+Bitte geben Sie die folgenden Informationen an...
+
+Einzelheiten
+1. Beschreiben Sie den Absturz so detailliert wie möglich, sonst werden wir Sie höchstwahrscheinlich ignorieren!
+2. Wenn möglich einen Screenshot des Fehlercodes (erscheint manchmal nicht)
+
+Ereignisanzeige
+1. Suchen Sie "Event Viewer" und öffnen Sie es
+2. Gehen Sie dann zu "Windows Logs" und navigieren Sie zu "Application's".
+3. Von dort aus geben Sie bitte den letzten Absturz an, der durch den roten Kreis mit "!" gekennzeichnet ist; kopieren Sie die allgemeinen Details (ändern Sie nichts) und fügen Sie sie neben dem Bericht ein.
+Hinweis: Manchmal generiert Maple keine Event Viewer Logs, wenn dies der Fall ist, überspringen Sie diesen Schritt.
+
+Osu!Runtime
+1. Öffnen Sie den Osu! Ordner und navigieren Sie zu "Logs".
+2. Ziehen Sie "Runtime" per Drag & Drop in Discord und posten Sie es zusammen mit Ihrem Bericht.
+
+Maple-Runtime
+1. Gehen Sie in die Suchleiste und geben Sie "Run" ein (osu! darf während dieses Vorgangs nicht geöffnet sein!)
+2. Geben Sie "%appdata%" ein und navigieren Sie zu dem großen, zufälligen Ordner, der einen Haufen zufälligen Text enthält
+3. Navigieren Sie dann zu "Logs" und dort finden Sie "Runtime". Ziehen Sie diese Datei per Drag & Drop in Discord neben Ihren Bericht.
+
+Aufzeichnung
+1. Wenn möglich, fügen Sie dem Bericht eine Aufnahme bei und wiederholen Sie den Absturz.
+2. Wenn Maple neben einem anderen Programm abstürzt und dieses Programm als Github (Open-Source) zur Verfügung steht, fügen Sie es bitte dem Bericht bei.
+---------------------------------------------
+Datum der letzten Änderung: 12/30/2022 12:32 Am
+von: Cheu [Maple-Moderator]

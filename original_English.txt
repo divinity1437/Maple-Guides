@@ -1,0 +1,74 @@
+// Debug // setup by Cheu // 2022
+
+Note before starting this process:
+- In no-way is this process meant for software such as Defender Control; please try and re-enable window's defender if you've disabled
+it through a third-party software. Adding onto this; if you have not yet used a third-party soft to disable window's defender, please restrain from doing so.
+
+---------------------------------------------
+Normal Computer Set-up
+
+Window's Defender
+1. Disable All Settingsin Virus & Threat Protection
+2. Disable All Settings for Exploit Protection
+3. Disable All Settings for Core Isolation
+
+Overlay's
+1. Disable Discord Overlay
+2. Disable GeForce Expierence Overlay
+3. Disable Overwolf Overlay - [Known to cause crashes]
+
+Anti-Cheat's & Third-Party anti-virus's
+1. Disable // Uninstall Vanguard
+2. Disable Third-Party Anti-Virus or add an exclusion for Maple.Software (Loader)
+[Anti-Virus's such as Kaspersky need to be competely disabled since exclusions don't work]
+
+---------------------------------------------
+Modified Computer Set-up (Follow Overlay's & Anti-cheat // Third-Party AV from Normal Computer Setup)
+
+If Window's Defender & Exploit Protection are removed from your system by default please follow the steps below exactly how they are listed
+
+Exploit Protection
+1. Open CMD with adminstrator priv
+2. Paste & run - bcdedit.exe /set {current} nx AlwaysOff
+3. Open Policy Editor
+4. Go to Local Computer Policy\Computer Configuration\Administrative Templates\System\Device Guard
+5. Disable all settings in the list
+6. Restart Computer
+
+Key-Registery
+1. Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios
+2. create DWORD key as HypervisorEnforcedCodeIntegrity and set value to 0
+3. Restart
+
+---------------------------------------------
+Debugging Maple (Crashes)
+First Check: https://maple.software/help/software-issues for a solution to your issue if none is found follow the steps below...
+Secondly: If it's "Infinite loading" or "Doesn't inject" or "Crashes on inject" then you didn't follow the steps above correctly!
+
+Please provide the following...
+
+Detail
+1. Detail the crash as much as possible if you don't we will most likely ignore you!
+2. If possible a screenshot of the error-code (sometimes doesn't appear)
+
+Event Viewer
+1. Search up "Event Viewer" and open it
+2. Next go to "Windows Logs" and navigate to Application's
+3. From there please provide the latest crash indicated by the red circle with "!"; copy it's general details (Do not alter anything) and paste it alongside the report.
+Note: Sometimes maple does not generate Event Viewer logs if so then skip this step
+
+Osu!Runtime
+1. Open Osu! Folder and navigate to "Logs"
+2. Drag and drop "Runtime" into discord and post it alongside your report.
+
+Maple-Runtime
+1. Go to search bar and type "Run" (Do not have osu! open during this process!)
+2. Type "%appdata%" and navigate to the large randomized folder that has a bunch of random text
+3. Then navigate to "Logs" and there you will find "Runtime", drag and drop that file into discord alongside your report.
+
+Recording
+1. If possible provide a recording alongside the report and replicate the crash.
+2. If Maple crashes alongside another program and said program as a Github (open-source) then please provide it alongside the report.
+---------------------------------------------
+Date Last edited: 12/30/2022 12:32 Am
+By: Cheu [Maple-Moderator]

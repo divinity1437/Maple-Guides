@@ -1,0 +1,74 @@
+// Debug // setup by Cheu // 2022
+
+Note avant de commencer ce processus :
+- Ce processus n'est en aucun cas destiné à des logiciels tels que Defender Control ; essayez de réactiver le Defender de Windows si vous l'avez désactivé par un logiciel tiers.
+si vous l'avez désactivé par un logiciel tiers. De plus, si vous n'avez pas encore utilisé un logiciel tiers pour désactiver le défenseur de Windows, veuillez vous abstenir de le faire.
+
+---------------------------------------------
+Configuration normale d'un ordinateur
+
+Défenseur de la fenêtre
+1. Désactiver tous les paramètres de la protection contre les virus et les menaces.
+2. Désactiver tous les paramètres de la protection contre les exploits
+3. Désactiver tous les paramètres de l'isolation du noyau
+
+Superpositions
+1. Désactiver la superposition Discord
+2. Désactivez la superposition GeForce Expierence.
+3. Désactiver la superposition Overwolf - [connue pour provoquer des plantages].
+
+Anti-Cheat et anti-virus tiers
+1. Désactiver // Désinstaller Vanguard
+2. Désactiver l'anti-virus tiers ou ajouter une exclusion pour Maple.Software (Loader)
+[Les anti-virus tels que Kaspersky doivent être complètement désactivés car les exclusions ne fonctionnent pas.]
+
+---------------------------------------------
+Configuration modifiée de l'ordinateur (suivi des superpositions et de l'anti-triche // AV tiers de la configuration normale de l'ordinateur)
+
+Si Window's Defender et Exploit Protection sont supprimés de votre système par défaut, veuillez suivre les étapes ci-dessous exactement de la manière dont ils sont répertoriés.
+
+Protection contre l'exploitation
+1. Ouvrez CMD avec le privilège d'administrateur
+2. Coller et exécuter - bcdedit.exe /set {current} nx AlwaysOff
+3. Ouvrez l'éditeur de politique
+4. Allez sur Politique de l'ordinateur local\Computer Configuration\Administrative Templates\System\Device Guard
+5. Désactivez tous les paramètres de la liste
+6. Redémarrer l'ordinateur
+
+Clé de registre
+1. Ordinateur\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios
+2. Créez la clé DWORD HypervisorEnforcedCodeIntegrity et définissez la valeur sur 0.
+3. Redémarrez
+
+---------------------------------------------
+Débogage de Maple (Crashs)
+Première vérification : https://maple.software/help/software-issues pour une solution à votre problème si aucune n'est trouvée, suivez les étapes ci-dessous...
+Deuxièmement : Si c'est "Infinite loading" ou "Doesn't inject" ou "Crashes on inject" alors vous n'avez pas suivi les étapes ci-dessus correctement !
+
+Veuillez fournir les éléments suivants...
+
+Détail
+1. Détaillez le crash autant que possible, si vous ne le faites pas, nous allons probablement vous ignorer !
+2. Si possible, une capture d'écran du code d'erreur (parfois, il n'apparaît pas).
+
+Visualisateur d'événements
+1. Recherchez "Event Viewer" et ouvrez-le.
+2. Ensuite, allez dans "Windows Logs" et naviguez jusqu'à "Application's".
+3. À partir de là, indiquez la dernière panne indiquée par le cercle rouge avec " !"; copiez ses détails généraux (ne modifiez rien) et collez-les à côté du rapport.
+Note : Parfois, maple ne génère pas les journaux de l'Observateur d'événements, si c'est le cas, passez cette étape.
+
+Osu!Runtime
+1. Ouvrez le dossier Osu ! et naviguez jusqu'à "Logs".
+2. Glissez et déposez "Runtime" dans discord et postez-le avec votre rapport.
+
+Maple-Runtime
+1. Allez dans la barre de recherche et tapez "Run" (Ne pas avoir osu ! ouvert pendant ce processus !)
+2. Tapez "%appdata%" et naviguez jusqu'au grand dossier aléatoire qui contient un tas de textes aléatoires.
+3. Puis naviguez jusqu'à "Logs" et là vous trouverez "Runtime", glissez et déposez ce fichier dans discord avec votre rapport.
+
+Enregistrement de
+1. Si possible, fournissez un enregistrement avec votre rapport et reproduisez le crash.
+2. Si Maple se plante en même temps qu'un autre programme et que ce programme est un Github (open-source), veuillez le fournir avec le rapport.
+---------------------------------------------
+Date de la dernière modification : 30/12/2022 12:32 Am
+Par : Cheu [Maple-Moderator]
