@@ -2,24 +2,24 @@
 
 Nota antes de iniciar este proceso:
 - De ninguna manera este proceso es para software como Defender Control; por favor intente volver a habilitar el defensor de Windows si lo ha deshabilitado a través de software de terceros.
-a través de un software de terceros. Además, si aún no ha utilizado un software de terceros para desactivar el defensor de la ventana, por favor, abstenerse de hacerlo.
+A través de un software de terceros. Tambien, si aún no ha utilizado un software de terceros para desactivar el defensor de la ventana, por favor, abstenerse de hacerlo.
 
 ---------------------------------------------
 Configuración normal del ordenador
 
 Defensor de Windows
-1. 1. Desactivar todas las opciones en Protección contra virus y amenazas
-2. 2. Desactive todas las opciones de la protección contra exploits
+1. Desactivar todas las opciones en Protección contra virus y amenazas
+2. Desactive todas las opciones de la protección contra exploits
 3. Desactivar todas las opciones de aislamiento del núcleo
 
-Superposiciones
-1. 1. Desactivar la ventana superpuesta Discordia
+Overlays
+1. Desactivar la ventana superpuesta Discordia
 2. Desactivar el módulo superpuesto GeForce Expierence
 3. Desactivar el Overlay Overwolf - [Se sabe que provoca cuelgues].
 
 Antisabotaje y antivirus de terceros
 1. Desactivar // Desinstalar Vanguard
-2. 2. Desactivar antivirus de terceros o añadir una exclusión para Maple.Software (Loader)
+2. Desactivar antivirus de terceros o añadir una exclusión para Maple.Software (Loader)
 [Anti-Virus como Kaspersky deben ser desactivados ya que las exclusiones no funcionan].
 
 ---------------------------------------------
@@ -31,9 +31,9 @@ Protección contra exploits
 1. Abra CMD con privilegios de administrador
 2. Pegue y ejecute - bcdedit.exe /set {current} nx AlwaysOff
 3. Abrir el Editor de Políticas
-4. 4. Vaya a Política de equipo local\Configuración del equipo\Plantillas administrativas\Sistema\Protección de dispositivos
+4. Vaya a Política de equipo local\Configuración del equipo\Plantillas administrativas\Sistema\Protección de dispositivos
 5. Desactive todas las opciones de la lista
-6. 6. Reinicie el equipo
+6. Reinicie el equipo
 
 Clave-Registro
 1. Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios
