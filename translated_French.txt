@@ -1,18 +1,19 @@
 // Debug // setup by Cheu // 2022
 
 Note avant de commencer ce processus :
-- Ce processus n'est en aucun cas destiné à des logiciels tels que Defender Control ; essayez de réactiver le Defender de Windows si vous l'avez désactivé par un logiciel tiers.
-si vous l'avez désactivé par un logiciel tiers. De plus, si vous n'avez pas encore utilisé un logiciel tiers pour désactiver le défenseur de Windows, veuillez vous abstenir de le faire.
+- Ce processus n'est en aucun cas destiné à des logiciels tels que Defender Control ; essayez de réactiver Windows Defender si vous l'avez désactivé par un logiciel tiers, si vous l'avez désactivé par un logiciel tiers. 
+
+De plus, si vous n'avez pas encore utilisé un logiciel tiers pour désactiver le Windows Defender, veuillez vous abstenir de le faire.
 
 ---------------------------------------------
 Configuration normale d'un ordinateur
 
-Défenseur de la fenêtre
+Windows Defender
 1. Désactiver tous les paramètres de la protection contre les virus et les menaces.
 2. Désactiver tous les paramètres de la protection contre les exploits
 3. Désactiver tous les paramètres de l'isolation du noyau
 
-Superpositions
+Overlays
 1. Désactiver la superposition Discord
 2. Désactivez la superposition GeForce Expierence.
 3. Désactiver la superposition Overwolf - [connue pour provoquer des plantages].
@@ -25,7 +26,7 @@ Anti-Cheat et anti-virus tiers
 ---------------------------------------------
 Configuration modifiée de l'ordinateur (suivi des superpositions et de l'anti-triche // AV tiers de la configuration normale de l'ordinateur)
 
-Si Window's Defender et Exploit Protection sont supprimés de votre système par défaut, veuillez suivre les étapes ci-dessous exactement de la manière dont ils sont répertoriés.
+Si Windows Defender et Exploit Protection sont supprimés de votre système par défaut, veuillez suivre les étapes ci-dessous exactement de la manière dont ils sont répertoriés.
 
 Protection contre l'exploitation
 1. Ouvrez CMD avec le privilège d'administrateur
@@ -53,12 +54,12 @@ Détail
 
 Visualisateur d'événements
 1. Recherchez "Event Viewer" et ouvrez-le.
-2. Ensuite, allez dans "Windows Logs" et naviguez jusqu'à "Application's".
+2. Ensuite, allez dans "Windows Logs" et naviguez jusqu'à "Applications".
 3. À partir de là, indiquez la dernière panne indiquée par le cercle rouge avec " !"; copiez ses détails généraux (ne modifiez rien) et collez-les à côté du rapport.
 Note : Parfois, maple ne génère pas les journaux de l'Observateur d'événements, si c'est le cas, passez cette étape.
 
 Osu!Runtime
-1. Ouvrez le dossier Osu ! et naviguez jusqu'à "Logs".
+1. Ouvrez le dossier Osu! et naviguez jusqu'à "Logs".
 2. Glissez et déposez "Runtime" dans discord et postez-le avec votre rapport.
 
 Maple-Runtime
@@ -68,7 +69,7 @@ Maple-Runtime
 
 Enregistrement de
 1. Si possible, fournissez un enregistrement avec votre rapport et reproduisez le crash.
-2. Si Maple se plante en même temps qu'un autre programme et que ce programme est un Github (open-source), veuillez le fournir avec le rapport.
+2. Si Maple plante en même temps qu'un autre programme et que ce programme est sur une plateforme telle que Github soit open-source, veuillez le fournir avec le rapport.
 ---------------------------------------------
 Date de la dernière modification : 30/12/2022 12:32 Am
 Par : Cheu [Maple-Moderator]
