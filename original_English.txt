@@ -1,31 +1,31 @@
 // Debug // setup by Cheu // 2022
 
 Note before starting this process:
-- In no-way is this process meant for software such as Defender Control; please try and re-enable window's defender if you've disabled
+- In no-way is this process meant for software such as Defender Control; please try and re-enable windows defender if you've disabled
 it through a third-party software. Adding onto this; if you have not yet used a third-party soft to disable window's defender, please restrain from doing so.
 
 ---------------------------------------------
 Normal Computer Set-up
 
-Window's Defender
+Windows Defender
 1. Disable All Settingsin Virus & Threat Protection
 2. Disable All Settings for Exploit Protection
 3. Disable All Settings for Core Isolation
 
-Overlay's
+Overlays
 1. Disable Discord Overlay
 2. Disable GeForce Expierence Overlay
 3. Disable Overwolf Overlay - [Known to cause crashes]
 
-Anti-Cheat's & Third-Party anti-virus's
+Anti-Cheats & Third-Party anti-viruses
 1. Disable // Uninstall Vanguard
 2. Disable Third-Party Anti-Virus or add an exclusion for Maple.Software (Loader)
-[Anti-Virus's such as Kaspersky need to be competely disabled since exclusions don't work]
+[Anti-Viruses such as Kaspersky need to be competely disabled since exclusions don't work]
 
 ---------------------------------------------
 Modified Computer Set-up (Follow Overlay's & Anti-cheat // Third-Party AV from Normal Computer Setup)
 
-If Window's Defender & Exploit Protection are removed from your system by default please follow the steps below exactly how they are listed
+If Windows Defender & Exploit Protection are removed from your system by default please follow the steps below exactly how they are listed
 
 Exploit Protection
 1. Open CMD with adminstrator priv
