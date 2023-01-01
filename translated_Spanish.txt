@@ -5,27 +5,27 @@ Nota antes de iniciar este proceso:
 A través de un software de terceros. Tambien, si aún no ha utilizado un software de terceros para desactivar el defensor de la ventana, por favor, abstenerse de hacerlo.
 
 ---------------------------------------------
-Configuración normal del ordenador
+Configuración normal del ordenador.
 
-Defensor de Windows
+Antivirus de windows (Windows Defender)
 1. Desactivar todas las opciones en Protección contra virus y amenazas
 2. Desactive todas las opciones de la protección contra exploits
 3. Desactivar todas las opciones de aislamiento del núcleo
 
 Overlays
-1. Desactivar la ventana superpuesta Discordia
-2. Desactivar el módulo superpuesto GeForce Expierence
-3. Desactivar el Overlay Overwolf - [Se sabe que provoca cuelgues].
+1. Desactivar la ventana de superposición de Discord
+2. Desactivar superposición dentro del juego /Nvidia Share (GeForce Expierence)
+3. Desactivar el Overlay de Overwolf - [Se sabe que provoca crasheos].
 
 Antisabotaje y antivirus de terceros
 1. Desactivar // Desinstalar Vanguard
 2. Desactivar antivirus de terceros o añadir una exclusión para Maple.Software (Loader)
-[Anti-Virus como Kaspersky deben ser desactivados ya que las exclusiones no funcionan].
+[Los Anti-Virus como Kaspersky deben ser desactivados ya que las exclusiones no funcionan].
 
 ---------------------------------------------
 Configuración Modificada del Ordenador (Siga Overlay's & Anti-cheat's // AV de Terceros desde la Configuración Normal del Ordenador)
 
-Si Window's Defender y Exploit Protection se eliminan de su sistema de forma predeterminada, siga los pasos que se indican a continuación exactamente como aparecen en la lista
+Si Window's Defender y Exploit Protection se eliminan de su sistema de forma predeterminada, siga los pasos que se indican a continuación exactamente como aparecen en la lista.
 
 Protección contra exploits
 1. Abra CMD con privilegios de administrador
