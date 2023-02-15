@@ -1,74 +1,80 @@
-// Debug // setup by Cheu // 2022
+// Debug // setup by Cheu // 02-15-2023
 
 Note before starting this process:
-This procedure is not intended for software such as Defender Control; please re-enable Windows Defender if it has been disabled.
-it through a third-party software. Adding to this, if you have not yet used a third-party tool to disable Windows defender, please restrain from doing so.
+This procedure is not intended for software such as Defender Control; please re-enable Windows Defender if it has been disabled through a third-party software. Additionally, if you have not yet used a third-party tool to disable Windows Defender, please refrain from doing so.
 
----------------------------------------------
-Normal Computer Set-up
+
+// Normal Computer Set-up //
 
 Windows Defender
+------------------
 1. Disable all settings in Virus & Threat Protection.
 2. Disable all settings for exploit protection.
 3. Disable all settings for core isolation.
 
 Overlays
+------------------
 1. Disable Discord Overlay.
-2. Disable GeForce Expierence Overlay.
-3. Disable Overwolf Overlay [which has been known to cause crashes].
+2. Disable GeForce Experience Overlay.
+3. Disable Overwolf Overlay, which has been known to cause crashes.
 
-Anti-Cheats & Third-Party anti-viruses
-1. Disable // Uninstall Vanguard.
-2. Disable Third-Party Anti-Virus or add an exclusion for Maple.Software (Loader).
-[Anti-Viruses such as Kaspersky need to be completely disabled since exclusions don't work.]
+Anti-Cheats & Third-Party Anti-Viruses
+------------------
+1. Disable or uninstall Vanguard.
+2. Disable third-party anti-virus or add an exclusion for Maple.Software (Loader). Note that some anti-viruses, such as Kaspersky, need to be completely disabled since exclusions do not work.
+3. Modified Computer Set-up (Follow Overlay's & Anti-cheat // Third-Party AV from Normal Computer Setup)
 
----------------------------------------------
-Modified Computer Set-up (Follow Overlay's & Anti-cheat // Third-Party AV from Normal Computer Setup)
-
-If Windows Defender & Exploit Protection are removed from your system by default, please follow the steps below exactly as they are listed.
+// If Windows Defender & Exploit Protection are removed from your system by default, please follow the steps below exactly as they are listed. //
 
 Exploit Protection
+------------------
 1. Open CMD with administrative privileges.
-2. Paste & run - bcdedit.exe /set {current} nx AlwaysOff.
+2. Paste and run the following command: bcdedit.exe /set {current} nx AlwaysOff.
 3. Open Policy Editor.
 4. Go to Local Computer Policy\Computer Configuration\Administrative Templates\System\Device Guard.
 5. Disable all settings in the list.
 6. Restart your computer.
+7. Key-Registry
 
-Key-Registery
-1. Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios
+Core Isolation
+------------------
+1. Go to Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios
 2. Make a DWORD key called "HypervisorEnforcedCodeIntegrity" with a value of 0.
-3. Restart.
+3. Restart your computer.
 
----------------------------------------------
-Debugging Maple (Crashes)
-First check: https://maple.software/help/software-issues for a solution to your issue. If none are found, proceed with the steps below...
-Secondly: If it says "infinite loading" or "Doesn't inject" or "Crashes on inject" then you didn't follow the steps above correctly!
+Note: There's been certain situations where Secure-Boot has caused issues... If these steps don't work please check if Secure-Boot is enabled.
+If enabled proceed to disable it and boot into windows.
 
-Please provide the following...
+// Debugging Maple (Crashes) //
+First check https://maple.software/help/software-issues for a solution to your issue. If none are found, proceed with the steps below.
 
-Detail
-1. Detail the crash as much as possible. If you don't, we will most likely ignore you!.
-2. If possible, provide a screenshot of the error-code (which sometimes doesn't appear).
+Secondly, if you encounter issues such as "infinite loading," "Doesn't inject," or "Crashes on inject," then you may not have followed the steps above correctly.
+
+Please provide the following:
+
+Details
+------------------
+Detail the crash as much as possible. If you do not provide enough information, we may not be able to help you effectively.
+If possible, provide a screenshot of the error code (which may not always appear).
 
 Event Viewer
-1. Search up "Event Viewer" and open it.
-2. Next go to "Windows Logs" and navigate to Application's.
-3. From there, please provide the latest crash indicated by the red circle with "!"; copy it's general details (Do not alter anything) and paste it alongside the report.
-Note: Sometimes Maple does not generate Event Viewer logs If so, then skip this step.
+------------------
+1. Search for "Event Viewer" and open it.
+2. Navigate to "Windows Logs" and select "Applications."
+3. Provide details of the latest crash indicated by the red circle with an exclamation mark. Copy its general details (do not alter anything) and paste them alongside your report. Note that sometimes Maple does not generate Event Viewer logs; if so, skip this step.
 
 Osu!Runtime
-1. Open Osu! folder and navigate to "Logs."
+------------------
+1. Open the Osu! folder and navigate to "Logs."
 2. Drag and drop "Runtime" into Discord and post it alongside your report.
 
 Maple-Runtime
-1. Go to the search bar and type "Run" (Do not have osu! open during this process!).
+------------------
+1. Press the Windows key + R. This will open the "Run" dialog box. (Do not have Osu! open during this process!)
 2. Type "%appdata%" and navigate to the large randomized folder that has a bunch of random text.
-3. Then navigate to "Logs" and there you will find "Runtime", Drag and drop that file into Discord alongside your report.
+3. Then navigate to "Logs," where you will find "Runtime." Drag and drop that file into Discord alongside your report.
 
 Recording
-1. If possible, provide a recording alongside the report and replicate the crash.
-2. If Maple crashes alongside another program and said program is on Github (open-source), then please provide it alongside the report.
----------------------------------------------
-Last modified: 12/30/2022 12:32 AM
-By: Cheu [Maple-Moderator]
+------------------
+1. If possible, provide a recording of the crash and replicate the issue.
+2. If Maple crashes alongside another program and that program is on Github (open-source), please provide it alongside your report.
