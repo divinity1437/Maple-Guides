@@ -1,8 +1,14 @@
-Guide created by: Cheu#5907
-Translations by Source#1179
+# Maple.Software | Guides
+This repo is based around [Maple.Software](https://maple.software/) here you'll find multiple guides that'll help you setup Maple, debug Maple, or show you how to multi-account. Also, please keep in mind that all content shown in this repo belongs to & is owned by [Maple.Software](https://maple.software/).
 
-Guide created: 12/29/2022 for Maple.software
+## Maple.Software Contributions
+- Maple Syrup | Owner
+- Azuki | Owner
+- Cheu, Eggsy | Moderators
+- OwOUser, Dqnny | Support
+- Spooker | Repo Contributor
 
----------------------------------
+![Maple.Software LLC Logo](https://i.ibb.co/thM1NDQ/discordlogo-removebg-preview.png)
 
-If guide is not accurcate to current version of Maple.software please inform Cheu#5907 if there's mistakes in translation please inform Source#1179
+### Kaede-Chan is Best Girl
+![Maple.Software LLC Kaede-Chan](https://i.ibb.co/1GZK14z/sketchy-time-teaser2.jpg)
